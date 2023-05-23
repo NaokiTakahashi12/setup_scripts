@@ -1,0 +1,41 @@
+repositories:
+  BehaviorTree.CPP:
+    type: git
+    url: https://github.com/BehaviorTree/BehaviorTree.CPP.git
+    version: v3.8
+  ros/angles:
+    type: git
+    url: https://github.com/ros/angles.git
+    version: ros2
+  ros/bond_core:
+    type: git
+    url: https://github.com/ros/bond_core.git
+    version: ros2
+  ros/diagnostics:
+    type: git
+    url: https://github.com/ros/diagnostics.git
+    version: ros2
+  ros_planning/moveit_msgs:
+    type: git
+    url: https://github.com/ros-planning/moveit_msgs.git
+    version: humble
+  ros_planning/navigation2:
+    type: git
+    url: https://github.com/ros-planning/navigation2.git
+    version: humble
+  ros_planning/navigation_msgs:
+    type: git
+    url: https://github.com/ros-planning/navigation_msgs.git
+    version: humble
+  object_recognition_msgs:
+    type: git
+    url: https://github.com/wg-perception/object_recognition_msgs.git
+    version: ros2
+  octomap_msgs:
+    type: git
+    url: https://github.com/OctoMap/octomap_msgs.git
+    version: ros2
+  ros_perception/vision_opencv:
+    type: git
+    url: https://github.com/ros-perception/vision_opencv.git
+    version: humble

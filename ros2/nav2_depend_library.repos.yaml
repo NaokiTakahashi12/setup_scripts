@@ -1,0 +1,18 @@
+repositories:
+  ceres-solver:
+    type: git
+    url: https://github.com/ceres-solver/ceres-solver.git
+    version: f68321e7de8929fbcdb95dd42877531e64f72f66
+  xsimd:
+    type: git
+    url: https://github.com/xtensor-stack/xsimd.git
+    version: 8ffcae81fc57a6cd05abddc2cdf573bda7c7d44a
+  xtensor:
+    type: git
+    url: https://github.com/xtensor-stack/xtensor.git
+    version: e534928cc30eb3a4a05539747d98e1d6868c2d62
+  xtl:
+    type: git
+    url: https://github.com/xtensor-stack/xtl.git
+    version: fea39142693fbbc2ef19d75012bc6b46ef0a5f8c
+
