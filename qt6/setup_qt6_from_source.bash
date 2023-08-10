@@ -14,4 +14,6 @@ git clone https://code.qt.io/qt/qt5.git qt6 \
     -DCMAKE_BUILD_TYPE=Release \
 && cmake \
     --build "$qt_build_dir" \
+&& cmake \
+    --install "$qt_build_dir" \
 || exit 129
