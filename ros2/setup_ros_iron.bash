@@ -22,7 +22,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-ros_distro=humble
+ros_distro=iron
 
 sudo apt-get update --fix-missing
 
