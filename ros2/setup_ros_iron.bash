@@ -104,9 +104,9 @@ mkdir -p ros2_${ros_distro}/src \
     colcon build \
     --symlink-install \
     --executor sequential \
-	--parallel-workers=1 \
-	--packages-ignore \
-	    test_communication \
+    --parallel-workers=1 \
+    --packages-ignore \
+        test_communication \
         --cmake-args \
             -DCMAKE_BUILD_TYPE=Release \
             -DCMAKE_CXX_STANDARD_LIBRARIES="-latomic" \
