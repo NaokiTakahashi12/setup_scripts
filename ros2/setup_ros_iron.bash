@@ -102,17 +102,18 @@ mkdir -p ros2_${ros_distro}/src \
         src \
     && echo 'MAKEFLAGS="-j1" \
     colcon build \
+    --merge-install \
     --symlink-install \
     --executor sequential \
     --parallel-workers=1 \
     --packages-ignore \
         test_communication \
-        --cmake-args \
-            -DCMAKE_BUILD_TYPE=Release \
-            -DCMAKE_CXX_STANDARD_LIBRARIES="-latomic" \
-            -DCMAKE_SHARED_LINKER_FLAGS="-latomic" \
-            -DCMAKE_EXE_LINKER_FLAGS="-latomic" \
-        || exit 1' > make.bash \
+    --cmake-args \
+        -DCMAKE_BUILD_TYPE=Release \
+        -DCMAKE_CXX_STANDARD_LIBRARIES="-latomic" \
+        -DCMAKE_SHARED_LINKER_FLAGS="-latomic" \
+        -DCMAKE_EXE_LINKER_FLAGS="-latomic" \
+    || exit 1' > make.bash \
     && bash make.bash \
     && echo "Please 'source ros2_${ros_distro}/install/setup.bash'" \
 || exit 1
