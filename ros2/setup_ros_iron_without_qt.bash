@@ -22,7 +22,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-ros_distro=humble
+ros_distro=iron
 
 sudo apt-get update --fix-missing
 
@@ -56,6 +56,7 @@ sudo apt-get install -y \
     libopencv-dev \
     libbullet-dev \
     liborocos-kdl-dev \
+    liblttng-ust-dev \
     pkg-config \
     sip-dev \
     qtbase5-dev \
@@ -107,6 +108,12 @@ mkdir -p ros2_${ros_distro}/src \
     --parallel-workers=1 \
     --packages-ignore \
         test_communication \
+        rviz2 \
+        turtlesim \
+    --packages-ignore-regex \
+        rqt_* \
+        rviz_* \
+        qt_* \
     --cmake-args \
         -DCMAKE_BUILD_TYPE=Release \
         -DCMAKE_CXX_STANDARD_LIBRARIES="-latomic" \
