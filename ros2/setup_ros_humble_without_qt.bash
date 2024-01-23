@@ -118,7 +118,7 @@ mkdir -p ros2_${ros_distro}/src \
         -DCMAKE_CXX_STANDARD_LIBRARIES="-latomic" \
         -DCMAKE_SHARED_LINKER_FLAGS="-latomic" \
         -DCMAKE_EXE_LINKER_FLAGS="-latomic" \
-        || exit 1' > make.bash \
+    || exit 1' > make.bash \
     && bash make.bash \
     && echo "Please 'source ros2_${ros_distro}/install/setup.bash'" \
 || exit 1
