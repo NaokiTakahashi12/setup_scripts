@@ -37,6 +37,15 @@ sudo apt-get install -y \
 python3 -m pip install \
     colcon-common-extensions \
     vcstool \
+    flake8 \
+    pytest \
+    lark \
+    pyqt5 \
+    numpy \
+    netifaces \
+    psutil \
+    future \
+    sphinx \
 || exit 1
 
 sudo apt-get install -y \
@@ -67,18 +76,9 @@ sudo apt-get install -y \
     pyqt5-dev \
     pyqt5-dev-tools \
     pybind11-dev \
-    python3-flake8 \
-    python3-pytest \
-    python3-lark \
     python3-sip-dev \
     python3-pyqt5.sip \
     python3-pyqt5 \
-    python3-numpy \
-    python3-netifaces \
-    python3-psutil \
-    python3-future \
-    python3-sphinx \
-    python3-lttng \
 || exit 1
 
 sudo apt-get install -y \
